@@ -1,14 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&amp;display=swap" rel="stylesheet">
-    <title>Vite App</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Vanilla</title>
+
+    <link rel="stylesheet" href="https://use.typekit.net/boz4dxd.css">
+    <link rel="stylesheet" href="/src/css/styles.css">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <script defer src="/main.js"></script>
   </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
+  <body id="page">
+    <a class="skip-link" href="#main">
+      Skip to content
+    </a>
+    <nav id="nav" class="nav">
+      <div class="width-l">
+        <a href="/">
+          <img src="/src/img/logo.svg" width="380" height="82" alt="logo">
+        </a>
+        <ul class="nav-list">
+          <li><a href="/pb3/corporate/peoplebank/solutions">Solutions</a></li>
+          <li>
+            <a class="nav-dropdown" href="/pb3/corporate/peoplebank/candidate-experience">Candidate Experience</a>
+            <ul>
+              <li><a href="/pb3/corporate/peoplebank/careers-sites">Careers Sites</a></li>
+              <li><a href="/pb3/corporate/peoplebank/job-adverts">Job Adverts</a></li>
+              <li><a href="/pb3/corporate/peoplebank/application-forms">Application Forms</a></li>
+              <li><a href="/pb3/corporate/peoplebank/candidate-support">Candidate Support</a></li>
+            </ul>
+          </li>
+          <li><a href="/pb3/corporate/peoplebank/about-us">About Us</a></li>
+          <li><a href="/pb3/corporate/peoplebank/resources">Resources</a></li>
+        </ul>
+        <a id="toggle" class="toggle" role="button" href="#">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+      </div>
+    </nav>
+    <header id="header" class="header">
+      header
+    </header>
+
+    <div class="slideshow width-l">
+
+      <!-- Full-width images with number and caption text -->
+      <div class="slide fade">
+        <div class="numbertext">1 / 4</div>
+        <img src="/src/img/slide-01.jpg">
+        <div class="text">Caption One</div>
+      </div>
+
+      <div class="slide fade">
+        <div class="numbertext">2 / 4</div>
+        <img src="/src/img/slide-02.jpg">
+        <div class="text">Caption Two</div>
+      </div>
+
+      <div class="slide fade">
+        <div class="numbertext">3 / 4</div>
+        <img src="/src/img/slide-03.jpg">
+        <div class="text">Caption Three</div>
+      </div>
+
+      <div class="slide fade">
+        <div class="numbertext">4 / 4</div>
+        <img src="/src/img/slide-04.jpg">
+        <div class="text">Caption Four</div>
+      </div>
+
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <br>
+
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+      <span class="dot" onclick="setSlide(1)"></span>
+      <span class="dot" onclick="setSlide(2)"></span>
+      <span class="dot" onclick="setSlide(3)"></span>
+      <span class="dot" onclick="setSlide(4)"></span>
+    </div>
+    <main id="main" class="main">
+      main
+    </main>
+    <footer id="footer" class="footer">
+      <!-- <svg>
+        <use xlink:href="/src/img/sprites.svg#wave" href="/src/img/sprites.svg#wave">
+        </use>
+       </svg> -->
+    </footer>
+    <div class="spinner">
+      <noscript>
+        <style>
+          .spinner {
+            display: none;
+          }
+        </style>
+      </noscript>
+      <div></div>
+    </div>
   </body>
 </html>
